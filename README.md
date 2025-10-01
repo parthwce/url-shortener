@@ -1,16 +1,23 @@
 # url-shortener
 
-# Buggy URL Shortener 🐛
+## Expected Behavior
 
-A simple command-line URL shortener with bugs and missing features.  
-Contributions to fix issues are welcome for Hacktoberfest!
+- The program should print a friendly error like "Error: Code not found."
+- It should not crash or throw exceptions.
 
-## Known Issues
-- No input validation on URLs.
-- URL shortening algorithm duplicates hashes.
-- Deleting stored URLs crashes the script.
-- No persistency: URLs are stored only in-memory.
-- Missing graceful error messages.
+## Actual Behavior
 
-## Usage
+- The program throws a Python `KeyError` exception and crashes.
+
+## Suggested Fix
+
+- Add a check if the code exists before returning the URL.
+- Print an informative error message if code not found.
+
+## Environment
+
+- Python 3.6+
+- OS: Any
+
+
 
