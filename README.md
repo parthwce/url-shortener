@@ -18,6 +18,14 @@
 
 - Python 3.6+
 - OS: Any
+# url-shortener
+
+A simple URL shortener in Python.
+
+## How to Use
+```bash
+python url_shortener.py shorten https://google.com
+python url_shortener.py expand <short_code>
 
 
 
